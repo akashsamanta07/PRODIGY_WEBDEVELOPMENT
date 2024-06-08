@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>STOPWATCH</h1></header>
+    <div class="container">
+        <div id="stopwatch">
+            00:00:00:00
+        </div>
+        <div id="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        <button onclick="fnLap()">LAP</button>
+    </div>
+    <div class="lapContainer">
+        <div>
+            <h2>Lap</h2>
+            <p class="lapno lap"></p>
+        </div>
+        <div>
+            <h2>Lap time</h2>
+            <p class="lapTime lap"></p>
+        </div>
+        <div >
+            <h2>Total</h2>
+            <p class="total lap"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

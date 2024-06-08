@@ -1,0 +1,95 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: #0a1395;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    background-color: #050505;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    flex-direction: column;
+}
+
+#stopwatch {
+    text-align: center;
+    font-size: 4.5rem;
+    background-color: #0fa7ed;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 1rem;
+    background-color: #e51717;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    margin: 0.8rem;
+    width: 6rem;
+    box-shadow: 5px 5px 1px rgba(52, 53, 62, 0.5);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #bc710e;
+    transform: scale(0.95);
+    box-shadow: 5px 5px 10px rgba(21, 21, 21, 0.8);
+}
+
+.lapContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    visibility: hidden;
+}
+
+.lapContainer div {
+    width: 120px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0.8rem 0;
+}
+
+@media (max-width: 655px) {
+    html {
+        font-size: 70%;
+    }
+
+    #stopwatch {
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 0.8rem;
+        font-size: medium;
+        width: 5rem;
+    }
+}
